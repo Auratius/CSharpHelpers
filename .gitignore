@@ -1,0 +1,220 @@
+# ---------------------------------------------------------------------------
+# .gitignore for .NET projects
+# Covers: Visual Studio, VS Code, Rider/ReSharper, MSBuild, NuGet, EF Core,
+#         Azure, Docker, test runners, profilers, and common OS cruft.
+# ---------------------------------------------------------------------------
+
+# ---- Build output ---------------------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild/
+[Bb]uilds/
+artifacts/
+publish/
+PublishProfiles/
+*.binlog
+
+# ---- MSBuild --------------------------------------------------------------
+*.tlog
+*.tlh
+*.tli
+project.lock.json
+project.fragment.lock.json
+.msbuild/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# ---- NuGet ----------------------------------------------------------------
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+.nuget/
+nuget.exe
+
+# ---- User & IDE files -----------------------------------------------------
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.pidb
+*.svclog
+*.scc
+*.sln.iml
+.vs/
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ---- Rider / ReSharper ----------------------------------------------------
+.idea/
+*.sln.iml
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+*.[Cc]ache
+*.VisualState.xml
+
+# ---- Visual Studio extras -------------------------------------------------
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+ipch/
+*.aps
+*.ncb
+*.psess
+*.vsp
+*.vspx
+*.sap
+*.gpState
+*.snapshot
+.localhistory/
+
+# ---- Test results / coverage ---------------------------------------------
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+*.lcov
+*.opencover.xml
+.coverlet/
+TestResults/
+nunit-*.xml
+*.trx
+*.dotCover
+*.dotTrace
+
+# ---- Profiling / diagnostics ---------------------------------------------
+*.diagsession
+*.dmp
+*.hprof
+*.etl
+*.nettrace
+*.speedscope.json
+*.trace.zip
+PerfView*.xml
+PerfView*.zip
+
+# ---- Roslyn analyzers / source generators --------------------------------
+.gen/
+generated/
+*.gen.cs
+GeneratedFiles/
+
+# ---- Entity Framework / EF Core -------------------------------------------
+*.edmx.diagram
+*.edmx.sql
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+ScaffoldingReadMe.txt
+
+# ---- ASP.NET / WebDeploy --------------------------------------------------
+appsettings.*.Development.json
+appsettings.*.Local.json
+appsettings.Development.local.json
+appsettings.Local.json
+*.[Pp]ublish.xml
+*.azurePubxml
+*.pubxml
+*.publishproj
+PublishScripts/
+wwwroot/dist/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# ---- Azure / Service Fabric -----------------------------------------------
+csx/
+*.build.csdef
+ecf/
+rcf/
+PublishProfiles/
+*.[Pp]ublishSettings
+ServiceFabricBackup/
+*.rptproj.bak
+
+# ---- Docker ---------------------------------------------------------------
+*.dcproj.user
+docker-compose.override.yml.user
+.dockerignore.local
+
+# ---- Secrets / local config (never commit) -------------------------------
+secrets.json
+*.pfx
+*.cer
+*.key
+*.p12
+.env
+.env.*
+!.env.example
+appsettings.secrets.json
+*.private.json
+
+# ---- Backups & temp -------------------------------------------------------
+*.bak
+*.backup
+*.swp
+*.swo
+*.tmp
+*.temp
+*~
+*.orig
+*.rej
+*.merged
+
+# ---- Operating systems ----------------------------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ---- Tooling --------------------------------------------------------------
+.tool-versions
+.local/
+.history/
+*.log
